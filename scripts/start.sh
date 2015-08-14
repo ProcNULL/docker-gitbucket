@@ -9,4 +9,3 @@ fi
 chown -R $UID_GITBUCKET /gitbucket
 
 sudo -u \#$UID_GITBUCKET java -jar /opt/gitbucket.war --gitbucket.home=/gitbucket
- 

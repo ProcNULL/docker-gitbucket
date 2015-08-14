@@ -3,7 +3,7 @@ FROM debian:jessie
 MAINTAINER Chronos <chronos@procnull.de>
 
 # UID Gitbucket will run as; defaults to 65534 (nobody)
-# Override at container creation time with "docker run --env UID_TS3=<NEW_UID>"
+# Override at container creation time with "docker run --env UID_GITBUCKET=<NEW_UID>"
 ENV UID_GITBUCKET=65534
 
 ADD /scripts/ /opt/scripts/
