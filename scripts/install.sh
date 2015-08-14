@@ -9,7 +9,6 @@ apt-get clean
 rm -rf /var/lib/apt/lists/*
 
 curl -Ls "https://github.com/takezoe/gitbucket/releases/download/$GITBUCKET_VERSION/gitbucket.war" >/opt/gitbucket.war
+chown $UID_GITBUCKET /opt/gitbucket.war
 
-mkdir /home/gitbucket/
 mkdir /gitbucket
-ln -s /gitbucket /home/gitbucket/.gitbucket
